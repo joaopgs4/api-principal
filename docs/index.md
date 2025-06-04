@@ -18,7 +18,7 @@
     Esta é minha entrega do trabalho individual da materia de microserviços e APIs do 5 semestre de Ciência da Computação.  
     Os k8s.yaml de cada microserviço e dos checkpoints estarão em suas abas separadas, na homepage deixarei apenas o compose (que é utilizado inicialmente e posteriormente deixado de lado).  
       
-    Para executar os códigos local ou globalmente, siga as instruções do README.md
+    Para executar os códigos local ou globalmente, tal como utilizar o script de clonagem siga as instruções do README.md do projeto
 
 ## Entregas
 
