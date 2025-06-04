@@ -32,3 +32,16 @@ Foi-se realizado o teste de carga conforme instruido utilizando um HPA:
 #####################################################################  
 ##########################VIDEO######################################  
 #####################################################################  
+
+### Analise de Custo
+
+Para a analise de custo e viabilidade da aplicação, utilizamos o site https://calculator.aws/[url=https://calculator.aws/]. Todos os calculos foram feito em dolares no servidor US-East-2, mais especificamente com os valores de Ohio.  
+Para a analise de custos, levamos em consideração um unico cluster kubernets pela EKS, assim como feito no projeto nas etapas anteriores. Para os calculos utilizamos os valores ja usados anteriormente de 1 cluster EKS, tambem selecionamos uma instancia EC2 t2.small  (a mesma utilizada dentro de nosso EKS) para comparar.
+![alt text](../img/calculo_aws.png)
+
+Com isso chegamos no valor de R$5508.08 (USD $976.80) anual ou R$460 (USD $81.40) ao mês. De onde desse valor todo, 89.6% são apenas de um unico cluster do kubernets. Dito isso, a conclusão que conseguimos chegar é que apesar de uma poderosa ferramente, o kubernets não parece se pagar em aplicações pequenas, começando a compensar em um ecosistema robusto onde não seja viavel, pratico e/ou economicamente beneficiavel manejar multiplas instancias ec2.
+
+### PaaS e utilização
+
+Neste projeto podemos observar uma utilização real de PaaS, onde toda a evolução de nosso micro-servico foi feito em torno da versatilidade e independencia dos serviços, onde eles devem ser capazes de rodar em qualquer lugar igualmente. Isto para, justamente, se adequar à nossa abordagem/solução PaaS, que foi justamente o EKS, onde utilizamos o kubernets orquestrado pela amazon para hospedar nossas aplicações e lidar com grande parte da configuração, enquanto nós fornecemos a aplicação em uma instrução .yaml de como executar aquela imagem X, que ja foi compilada e disponibilizada em um pipeline anteriormente.  
+Tanto no projeto individual quanto no projeto em grupos, tivemos interações com a AWS com o mesmo objetivo, hospedar nosso serviço em seus servidores
