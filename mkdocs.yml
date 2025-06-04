@@ -2,7 +2,7 @@ site_name: Entrega
 site_author: João Sarti
 site_url: https://joaopgs4.github.io/api-principal
 repo_url: https://github.com/joaopgs4/api-principal
-repo_name: github/api-principal
+repo_name: api-principal
 
 theme:
   name: material
