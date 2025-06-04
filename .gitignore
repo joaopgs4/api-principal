@@ -10,3 +10,5 @@ api/order-service
 api/product
 api/product-service
 api/volume
+.venv
+venv
