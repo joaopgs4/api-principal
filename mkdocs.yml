@@ -139,4 +139,7 @@ nav:
     - Exercicio 3: ./exercicio3/main.md
     - Exercicio 4: ./exercicio4/main.md
     - Exercicio 5: ./exercicio5/main.md
-  - bottlenecks: ./bottlenecks/main.md
+    - bottlenecks: ./bottlenecks/main.md
+  - Projeto:
+    - AWS + EKS: ./aws/main.md
+
